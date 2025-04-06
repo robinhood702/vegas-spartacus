@@ -1,70 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vegas Spartacus</title>
-  <style>
-    /* Default styles */
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: black; /* Black background */
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('img/ceaser.webp'); /* Gradient overlay */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Vegas Spartacus</title>
+ <style>
+ body {
+ background-image: url('img/roman.webp');
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ font-family: 'Times New Roman', Times, serif;
+ color: white;
+ text-align: center;
+ margin: 0;
+ padding: 0;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ }
 
-    body::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0); /* Black overlay with 0 opacity */
-      z-index: 1;
-    }
+ h1 {
+ font-size: 3em;
+ margin-bottom: 20px;
+ text-shadow: 2px 2px 4px #000000;
+ text-transform: uppercase;
+ color: white;
+ text-shadow:
+ 0 0 3px #fff,
+ 0 0 7px #fff,
+ 0 0 9px #fff;
+ }
 
-    h1 {
-      font-family: "Times New Roman", serif;
-      font-size: 4rem;
-      text-transform: uppercase;
-      margin: 0;
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      /* Gradient text - Lighter Silver shades */
-      background: linear-gradient(45deg, #E0E0E0, #F0F0F0, #C8C8C8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
-
-    /* Media query for mobile devices (example: screens smaller than 768px) */
-    @media (max-width: 768px) {
-      body {
-        background-size: contain; /* Use contain to fit the image */
-        background-position: top center; /* Position at the top center */
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: flex-start; /* Align items to the top */
-        padding-top: 25vh; /* Add padding at the top, using viewport height */
-      }
-
-      h1 {
-        font-size: 2.5rem; /* Reduce font size for smaller screens */
-      }
-    }
-  </style>
+ /* Responsive design */
+ @media (max-width: 768px) {
+ h1 {
+ font-size: 2em;
+ }
+ }
+ </style>
 </head>
 <body>
-  <h1>Vegas Spartacus</h1>
+ <h1>VEGAS SPARTACUS</h1>
 </body>
 </html>
